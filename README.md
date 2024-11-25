@@ -30,9 +30,9 @@ Separately from the zipped folder, you can find the output file.
     - simulation data from running the MIKE model (.dfsu)
 
 ## Background
-This folder contains data for a simulation with the MIKE 21 FLow Model FM in the Øresund Strait, which is the strip of water between Denmark and Sweden. The simulation is primarily driven by the surge component introduced at the two open boundarys (one in North and one in South). The meterological forcings such as air pressure and wind have only a minor effect on the result. The tidal range of the area is 10-20 cm. 
+This folder contains data for a simulation with the MIKE 21 Flow Model FM in the Øresund Strait, which is the strip of water between Denmark and Sweden. The simulation is primarily driven by the surge component introduced at the two open boundarys (one in North and one in South). The meterological forcings such as air pressure and wind have only a minor effect on the result. The tidal range of the area is 10-20 cm. 
 
-This repository supplies the setup files, input data, observation data as well as simulation data from this numerical model. The data supplied in this repository covers the period from 2014-01-01 to 2023-12-31. There is a spin-up period, so it is recommended to remove the first 10 days of the data. 
+This repository supplies the setup files, input data and observation data, as well as simulation data from this numerical model. The simulation data is available in Zenodo. The data supplied in this repository covers the period from 2014-01-01 to 2023-12-31. There is a spin-up period, so it is recommended to remove the first 10 days of the simulation data. 
 
 ## The MIKE 21 Flow Model FM
 MIKE 21 Flow Model FM is a modelling system based on a flexible mesh approach. The modelling system has been developed for applications within oceanographic, coastal and estuarine environments. The model is based on the numerical solution of the two-dimensional shallow water equations - the depth-integrated incompressible Reynolds averaged Navier-Stokes equations. More information can be found [in the documentation here](https://manuals.mikepoweredbydhi.help/latest/Coast_and_Sea/MIKE_FM_HD_2D.pdf).
