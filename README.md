@@ -56,7 +56,7 @@ This data can be found as a separate file in [Zenodo](10.5281/zenodo.14160710). 
 
 Since all data, including output from a simulation, is given, it is not necessary to run the MIKE simulation. However, it is possible, since a setup file is supplied as well as all of the input data. Running the MIKE software requires a license. Read more about obtaining a license [here](https://www.dhigroup.com/technologies/mikepoweredbydhi/pricing) and about academic licensing [here](https://www.dhigroup.com/technologies/mikepoweredbydhi/pricing/academic-licenses). If you already have a license, a step-by-step guide for running simulations can be found [here](https://manuals.mikepoweredbydhi.help/latest/Coast_and_Sea/MIKE_FM_HD_Step_By_Step.pdf).
 
-The input and output data is given as dfs1 and dfsu files. These files can be processed using the mikeio package developed by DHI. Find more information on the data types and the mikeio API on the [documentation website here](https://dhi.github.io/mikeio/).
+The input and output data is given as dfs files. These files can be processed using the mikeio package developed by DHI. Find more information on the data types and the mikeio API on the [documentation website here](https://dhi.github.io/mikeio/).
 
 ## Model validation
 The modelskill package developed at DHI can be used for validating the model outputs by comparing to observational data. Find more information in [the documentation here](https://dhi.github.io/modelskill/). 
