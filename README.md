@@ -52,7 +52,7 @@ The outputs of the model are given as a timeseries for each mesh element on the 
 - the surface elevation,
 - the u and v components of the current velocity.
 
-This data can be found as a separate file in the repository. Once a simulation has been run, a log file will be generated. The log-file for the benchmark simulation is found in the folder /model, and it contains information on the parameters used and the time spent on the simulation. 
+This data can be found as a separate file in the repository. Once a simulation has been run, a log file will be generated. The log-file for the benchmark simulation is found in the folder [/model](/model), and it contains information on the parameters used and the time spent on the simulation. 
 
 Since all data, including output from a simulation, is given, it is not necessary to run the MIKE simulation. However, it is possible, since a setup file is supplied as well as all of the input data. Running the MIKE software requires a license. Read more about obtaining a license [here](https://www.dhigroup.com/technologies/mikepoweredbydhi/pricing) and about academic licensing [here](https://www.dhigroup.com/technologies/mikepoweredbydhi/pricing/academic-licenses). If you already have a license, a step-by-step guide for running simulations can be found [here](https://manuals.mikepoweredbydhi.help/latest/Coast_and_Sea/MIKE_FM_HD_Step_By_Step.pdf). Note that the output data supplied in this repository has been generated using the 2022 version of the MIKE21 Flow Model FM.
 
