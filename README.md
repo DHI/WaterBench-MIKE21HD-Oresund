@@ -1,4 +1,4 @@
-# Hydrodynamical model of Øresund
+# Hydrodynamic model of Øresund
 This README file contains practical information and background information on the data. To view this markdown file in VScode, use ctrl+shift+v. The data can be cited as:
 
 DHI. (2024). Hydrodynamical model of Øresund: MIKE model setup, outputs and validation material (1.0) [Data set]. Zenodo. doi: [10.5281/zenodo.14160710](10.5281/zenodo.14160710)
@@ -85,7 +85,7 @@ Several data sources contribute to this case. They are outlined below.
 
 ### Altimetry data
 
-The altimetry data is extracted from a range of different sources. The data is based on satellite observations, and the data is downloaded using [DHI's services for marine observation data](https://altimetry.dhigroup.com/). The water level measurements processed by centering around zero (subtracting the mean). Data sources:
+The altimetry data is extracted from a range of different sources. The data is based on satellite observations, and the data is downloaded using [DHI's services for marine observation data](https://altimetry.dhigroup.com/). The water level measurements are processed by centering around zero (subtracting the mean). Data sources:
 
 | Satellite name    | Owner|  Link |
 | -------- | ------- | ------- |
