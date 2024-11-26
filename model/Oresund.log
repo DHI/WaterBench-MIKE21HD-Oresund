@@ -1,0 +1,791 @@
+// Created    : 2024-11-15 13:59:40
+// Executable : C:\Program Files (x86)\DHI\MIKE Zero\2024\bin\x64\femenginehd.exe
+// Version    : 22.0.3.17277
+
+
+======================= Computing Environment ========================
+  Local machine name              : DKCPH1-GPU2412
+  Number of subdomains            : 1
+  Local subdomain id              : -1
+  Specified threads per subdomain : 24
+======================================================================
+
+
+======================================================================
+Target: FemEngineHD
+
+
+
+  Section: SYSTEM ----------------------------------------------------
+
+
+  Section: TIME ------------------------------------------------------
+      start_time : 2014 1 1 0 0 0 
+      time_step_interval : 300
+      number_of_time_steps : 1051764
+
+
+  Section: DOMAIN ----------------------------------------------------
+      number_of_dimensions : 2
+      number_of_meshes : 1
+      file_name : C:\Users\frtp\Source\BenchmarkCases\MIKE21HD_Oresund\input\mesh_EMOD.mesh
+      check_mesh : 1 (default)
+      datum_depth : 0
+      minimum_depth : -2
+      thresshold_depth : 0.35 (default)
+      number_of_domains : 16
+      type_of_reordering : 1
+
+
+    Section: MATERIAL ------------------------------------------------
+        include_material_zones : 0
+
+
+    Section: INFRASTRUCTURE ------------------------------------------
+        include_building_zones : 0
+        include_road_zones : 0
+
+
+========================== Mesh information ==========================
+  Number of elements         : 3320
+  Number of faces            : 5239
+  Number of nodes            : 1916
+  Number of sections         : 3
+  Min x-coordinate (degree)  : 12.193992
+  Max x-coordinate (degree)  : 13.062208
+  Min y-coordinate (degree)  : 55.277802
+  Max y-coordinate (degree)  : 56.13362
+  Min z-coordinate (m)       : -47.743146
+  Max z-coordinate (m)       : -2
+======================================================================
+
+
+======================== Boundary information ========================
+
+  number                code    number of points     number of faces
+       1                   1                 480                 478
+       2                   2                  13                  12
+       3                   3                  29                  28
+======================================================================
+
+
+  Section: MODULE_SELECTION ------------------------------------------
+      mode_of_hydrodynamic_module : 2
+      hydrodynamic_features : 1
+      fluid_property : 1
+      mode_of_transport_module : 0
+      mode_of_mud_transport_module : 0
+      mode_of_sand_transport_module : 0
+      mode_of_eco_lab_module : 0
+      mode_of_particle_tracking_module : 0
+      mode_of_data_assimilation_module : 0 (default)
+
+
+  Section: HYDRODYNAMIC_MODULE ---------------------------------------
+      mode : 2
+
+
+    Section: EQUATION ------------------------------------------------
+        formulation : 4
+        time_formulation : 2 (default)
+
+
+    Section: TIME ----------------------------------------------------
+        start_time_step : 0
+        time_step_factor : 1
+
+
+    Section: FLOOD_AND_DRY -------------------------------------------
+        type : 2
+        drying_depth : 0.005
+        mass_depth : 0.1
+        wetting_depth_maximum : 0.1 (default)
+        maximum_number_of_iterations : 100 (default)
+
+
+    Section: DEPTH ---------------------------------------------------
+        type : 0
+
+
+    Section: DENSITY -------------------------------------------------
+        type : 0
+
+
+    Section: EDDY_VISCOSITY ------------------------------------------
+        kinematic_viscosity_of_water : 0.000001 (default)
+
+
+      Section: HORIZONTAL_EDDY_VISCOSITY -----------------------------
+          type : 3
+
+
+        Section: SMAGORINSKY_FORMULATION -----------------------------
+            format : 0
+            constant_value : 0.28
+            minimum_eddy_viscosity : 0.000001
+            maximum_eddy_viscosity : 1.E+10
+
+
+    Section: BED_RESISTANCE ------------------------------------------
+        type : 4
+
+
+      Section: MANNING_NUMBER ----------------------------------------
+          format : 0
+          constant_value : 32
+
+
+    Section: VEGETATION ----------------------------------------------
+        type : 0
+
+
+    Section: CORIOLIS ------------------------------------------------
+        type : 2
+
+
+    Section: WIND_FORCING --------------------------------------------
+        type : 1
+        format : 3
+        file_name : MIKE21HD_Oresund\input\ERA5_Oresund_UVP_2014_2023.dfs2
+        item_number_for_pressure : 3
+        item_number_for_x_velocity : 1
+        item_number_for_y_velocity : 2
+------------------------- Data File Summary --------------------------
+  Creator: mikeio
+  File   : MIKE21HD_Oresund\input\ERA5_Oresund_UVP_2014_2023.dfs2
+  Title  : 
+
+  Start date  Start time  Sets   Interval  Unit
+  2013-12-15    00:00:00 88056       3600  second
+
+  Axis  Sets   Interval  Axis origin  Unit
+     1     4       0.25            0   meter
+     2     4       0.25            0   meter
+
+  Dynamic items:
+  Item name            Item type               Minimum    Maximum Unit
+  U10                  Wind speed           -19.531773  18.726912 meter/sec
+  V10                  Wind speed           -14.311172  16.147987 meter/sec
+  Pressure             Pressure             963.802551 1050.39563 hectopascal
+----------------------------------------------------------------------
+        neutral_pressure : 1013
+        type_of_soft_start : 2
+        soft_time_interval : 0
+
+
+      Section: WIND_FRICTION -----------------------------------------
+          type : 0
+          constant_friction : 0.001255
+
+
+    Section: ICE -----------------------------------------------------
+        type : 0
+
+
+    Section: TIDAL_POTENTIAL -----------------------------------------
+        type : 0
+
+
+    Section: PRECIPITATION_EVAPORATION -------------------------------
+        type_of_precipitation : 0
+        type_of_evaporation : 0
+
+
+    Section: INFILTRATION --------------------------------------------
+        type : 0
+
+
+    Section: RADIATION_STRESS ----------------------------------------
+        type : 0
+
+
+    Section: SOURCES -------------------------------------------------
+        number_of_sources : 0
+
+
+    Section: SOLUTION_TECHNIQUE --------------------------------------
+        additional_settings : 1 (default)
+        scheme_of_time_integration : 1
+        scheme_of_space_discretization_horizontal : 1
+        gradient_calculation : 3 (default)
+        gradient_limiter : 0 (default)
+        face_value_limiter : 2 (default)
+        boundary_correction : 1 (default)
+        type_of_Riemann_solver : 3
+        Riemann_factor : 1
+        type_of_face_depth : 3 (default)
+        gravity_calculation : 2 (default)
+        max_iterations_bed_resistance : 25 (default)
+        type_of_land_condition : 2 (default)
+        type_of_gate_condition : 1 (default)
+        CFL_critical_HD : 0.8
+        dt_min_HD : 0.01
+        dt_max_HD : 30
+        CFL_correction_HD : 0 (default)
+        time_stepping_AD : 1 (default)
+        CFL_critical_AD : 0.8
+        dt_min_AD : 0.01
+        dt_max_AD : 30
+        CFL_critical_substeps_AD : 0.8 (default)
+        error_level : 0
+        maximum_number_of_errors : 200
+
+
+    Section: STRUCTURE_MODULE ----------------------------------------
+        method : 2 (default)
+
+
+    Section: STRUCTURES ----------------------------------------------
+        check_structures : 1 (default)
+
+
+      Section: DIKES -------------------------------------------------
+          number_of_dikes : 0
+          output_of_link_data : 0
+
+
+      Section: GATES -------------------------------------------------
+          number_of_gates : 0
+          output_of_link_data : 0 (default)
+          format_of_link_data : 1 (default)
+
+
+      Section: PIERS -------------------------------------------------
+          format : 0
+          number_of_piers : 0
+
+
+      Section: TURBINES ----------------------------------------------
+          number_of_turbines : 0
+
+
+      Section: SHIP --------------------------------------------------
+
+
+    Section: INFRASTRUCTURE ------------------------------------------
+
+
+    Section: INITIAL_CONDITIONS --------------------------------------
+        type : 1
+        surface_elevation_constant : 0
+        u_velocity_constant : 0
+        v_velocity_constant : 0
+
+
+    Section: BOUNDARY_CONDITIONS -------------------------------------
+        internal_land_boundary_type : 1
+
+
+      Section: CODE_1 ------------------------------------------------
+          type : 1
+
+
+      Section: CODE_2 ------------------------------------------------
+          type : 12
+          type_interpolation_constrain : 0
+          type_of_data : 2 (default)
+          format : 3
+          file_name : MIKE21HD_Oresund\input\BC_UV_North_2D_2014-2024.dfs1
+          item_numbers : 1 2 
+          type_of_soft_start : 2
+          soft_time_interval : 0
+          reference_values : 0 0 
+          type_of_time_interpolation : 1
+          method_of_space_interpolation : 1 (default)
+          type_of_space_interpolation : 1
+
+
+        Section: DATA_2 ----------------------------------------------
+            format : 3
+            file_name : MIKE21HD_Oresund\input\BC_SFC_North_2D_2014-2024.dfs1
+            item_number : 1
+            type_of_soft_start : 2
+            soft_time_interval : 0
+            reference_value : 0
+            type_of_time_interpolation : 1
+            method_of_space_interpolation : 1 (default)
+            type_of_space_interpolation : 1
+          type_of_coriolis_correction : 0
+          type_of_wind_correction : 0
+          type_of_pressure_correction : 0
+          type_of_relaxation : 0 (default)
+          distance : 10000 (default)
+------------------------- Data File Summary --------------------------
+  Creator: mikeio
+  File   : MIKE21HD_Oresund\input\BC_SFC_North_2D_2014-2024.dfs1
+  Title  : BC_North_SFC
+
+  Start date  Start time  Sets   Interval  Unit
+  2014-01-01    00:00:00175297       1800  second
+
+  Axis  Sets   Interval  Axis origin  Unit
+     1    13   0.010783            0   degree
+
+  Static items:
+  Item name            Item type               Minimum    Maximum Unit
+  Bathymetry           Bathymetry            -27.10891  -8.649116 meter
+
+  Dynamic items:
+  Item name            Item type               Minimum    Maximum Unit
+  Surface elevation    Surface Elevation     -0.790547   1.517291 meter
+----------------------------------------------------------------------
+------------------------- Data File Summary --------------------------
+  Creator: mikeio
+  File   : MIKE21HD_Oresund\input\BC_UV_North_2D_2014-2024.dfs1
+  Title  : BC_North_UV
+
+  Start date  Start time  Sets   Interval  Unit
+  2014-01-01    00:00:00175297       1800  second
+
+  Axis  Sets   Interval  Axis origin  Unit
+     1    13   0.010783            0   degree
+
+  Static items:
+  Item name            Item type               Minimum    Maximum Unit
+  Bathymetry           Bathymetry            -27.10891  -8.649116 meter
+
+  Dynamic items:
+  Item name            Item type               Minimum    Maximum Unit
+  Depth averaged U vel u-velocity component  -0.961219   1.069503 meter/sec
+  Depth averaged V vel v-velocity component  -0.784297    0.79485 meter/sec
+----------------------------------------------------------------------
+
+
+      Section: CODE_3 ------------------------------------------------
+          type : 12
+          type_interpolation_constrain : 0
+          type_of_data : 2 (default)
+          format : 3
+          file_name : MIKE21HD_Oresund\input\BC_UV_South_2D_2014-2024.dfs1
+          item_numbers : 1 2 
+          type_of_soft_start : 2
+          soft_time_interval : 0
+          reference_values : 0 0 
+          type_of_time_interpolation : 1
+          method_of_space_interpolation : 1 (default)
+          type_of_space_interpolation : 1
+
+
+        Section: DATA_2 ----------------------------------------------
+            format : 3
+            file_name : MIKE21HD_Oresund\input\BC_SFC_South_2D_2014-2024.dfs1
+            item_number : 1
+            type_of_soft_start : 2
+            soft_time_interval : 0
+            reference_value : 0
+            type_of_time_interpolation : 1
+            method_of_space_interpolation : 1 (default)
+            type_of_space_interpolation : 1
+          type_of_coriolis_correction : 0
+          type_of_wind_correction : 0
+          type_of_pressure_correction : 0
+          type_of_relaxation : 0 (default)
+          distance : 10000 (default)
+------------------------- Data File Summary --------------------------
+  Creator: mikeio
+  File   : MIKE21HD_Oresund\input\BC_SFC_South_2D_2014-2024.dfs1
+  Title  : BC_South_SFC
+
+  Start date  Start time  Sets   Interval  Unit
+  2014-01-01    00:00:00175297       1800  second
+
+  Axis  Sets   Interval  Axis origin  Unit
+     1    29   0.014685            0   degree
+
+  Static items:
+  Item name            Item type               Minimum    Maximum Unit
+  Bathymetry           Bathymetry           -23.727806 1.0000E-35 meter
+
+  Dynamic items:
+  Item name            Item type               Minimum    Maximum Unit
+  Surface elevation    Surface Elevation     -1.466725   1.525474 meter
+----------------------------------------------------------------------
+------------------------- Data File Summary --------------------------
+  Creator: mikeio
+  File   : MIKE21HD_Oresund\input\BC_UV_South_2D_2014-2024.dfs1
+  Title  : BC_South_UV
+
+  Start date  Start time  Sets   Interval  Unit
+  2014-01-01    00:00:00175297       1800  second
+
+  Axis  Sets   Interval  Axis origin  Unit
+     1    29   0.014685            0   degree
+
+  Static items:
+  Item name            Item type               Minimum    Maximum Unit
+  Bathymetry           Bathymetry           -23.727806 1.0000E-35 meter
+
+  Dynamic items:
+  Item name            Item type               Minimum    Maximum Unit
+  Depth averaged U vel u-velocity component  -0.221812   0.270036 meter/sec
+  Depth averaged V vel v-velocity component  -0.869221   0.591514 meter/sec
+----------------------------------------------------------------------
+
+
+    Section: TEMPERATURE_SALINITY_MODULE -----------------------------
+        temperature_mode : 0
+        salinity_mode : 0
+
+
+    Section: DECOUPLING ----------------------------------------------
+        type : 0
+
+
+    Section: OUTPUTS -------------------------------------------------
+        number_of_outputs : 2
+
+
+      Section: OUTPUT_1 ----------------------------------------------
+          include : 1
+          file_name : MIKE21HD_Oresund\model\Oresund.m21fm - Result Files\Area.dfsu
+          title : Area
+          type : 1
+          format : 2
+          delete_value : 1.E-35 (default)
+          flood_and_dry : 2
+          precision : 2 (default)
+          use_end_time : 1
+          first_time_step : 0
+          time_step_frequency : 6
+          number_of_variables : 0 (default)
+          interpolation_type : 1
+
+
+        Section: PARAMETERS_2D ---------------------------------------
+            SURFACE_ELEVATION : 1
+            STILL_WATER_DEPTH : 0
+            TOTAL_WATER_DEPTH : 0
+            U_VELOCITY : 1
+            V_VELOCITY : 1
+            P_FLUX : 0
+            Q_FLUX : 0
+            CURRENT_SPEED : 0
+            CURRENT_DIRECTION : 0
+            WIND_U_VELOCITY : 0
+            WIND_V_VELOCITY : 0
+            AIR_PRESSURE : 0
+            PRECIPITATION : 0
+            EVAPORATION : 0
+            BED_RESISTANCE_COEFFICIENT : 0
+            DRAG_COEFFICIENT : 0
+            BED_SHEARSTRESS : 0
+            BED_SHEARSTRESS_X_COMPONENT : 0
+            BED_SHEARSTRESS_Y_COMPONENT : 0
+            EDDY_VISCOSITY : 0
+            CFL_NUMBER : 0
+            CONVERGENCE_ANGLE : 0
+            AREA : 0
+          coordinate_type : LONG/LAT
+
+
+        Section: AREA ------------------------------------------------
+            number_of_points : 4
+
+
+          Section: POINT_1 -------------------------------------------
+              x : 12.185309
+              y : 55.269243
+
+
+          Section: POINT_2 -------------------------------------------
+              x : 12.185309
+              y : 56.142178
+
+
+          Section: POINT_3 -------------------------------------------
+              x : 13.070891
+              y : 56.142178
+
+
+          Section: POINT_4 -------------------------------------------
+              x : 13.070891
+              y : 55.269243
+
+
+      Section: OUTPUT_2 ----------------------------------------------
+          include : 1
+          file_name : MIKE21HD_Oresund\model\Oresund.m21fm - Result Files\points.dfs0
+          title : Points
+          type : 1
+          format : 0
+          delete_value : 1.E-35 (default)
+          flood_and_dry : 2
+          precision : 2 (default)
+          use_end_time : 1
+          first_time_step : 0
+          time_step_frequency : 1
+          number_of_variables : 0 (default)
+          interpolation_type : 2
+          interpolation_subtype : 1 (default)
+
+
+        Section: PARAMETERS_2D ---------------------------------------
+            SURFACE_ELEVATION : 1
+            STILL_WATER_DEPTH : 0
+            TOTAL_WATER_DEPTH : 0
+            U_VELOCITY : 1
+            V_VELOCITY : 1
+            P_FLUX : 0
+            Q_FLUX : 0
+            CURRENT_SPEED : 0
+            CURRENT_DIRECTION : 0
+            WIND_U_VELOCITY : 0
+            WIND_V_VELOCITY : 0
+            AIR_PRESSURE : 0
+            PRECIPITATION : 0
+            EVAPORATION : 0
+            BED_RESISTANCE_COEFFICIENT : 0
+            DRAG_COEFFICIENT : 0
+            BED_SHEARSTRESS : 0
+            BED_SHEARSTRESS_X_COMPONENT : 0
+            BED_SHEARSTRESS_Y_COMPONENT : 0
+            EDDY_VISCOSITY : 0
+            CFL_NUMBER : 0
+            CONVERGENCE_ANGLE : 0
+            AREA : 0
+          coordinate_type : LONG/LAT
+          input_format : 1
+          number_of_points : 13
+
+
+        Section: POINT_1 ---------------------------------------------
+            name : Drogden
+            x : 12.7117
+            y : 55.5358
+
+
+        Section: POINT_2 ---------------------------------------------
+            name : Klagshamn
+            x : 12.892
+            y : 55.526
+
+
+        Section: POINT_3 ---------------------------------------------
+            name : Barseback
+            x : 12.9033
+            y : 55.7564
+
+
+        Section: POINT_4 ---------------------------------------------
+            name : Dragor
+            x : 12.6833
+            y : 55.6
+
+
+        Section: POINT_5 ---------------------------------------------
+            name : Flinten7
+            x : 12.8445
+            y : 55.5894
+
+
+        Section: POINT_6 ---------------------------------------------
+            name : Helsingborg
+            x : 12.6845
+            y : 56.0412
+
+
+        Section: POINT_7 ---------------------------------------------
+            name : Hornbaek
+            x : 12.466
+            y : 56.097
+
+
+        Section: POINT_8 ---------------------------------------------
+            name : Kobenhavn
+            x : 12.65
+            y : 55.7
+
+
+        Section: POINT_9 ---------------------------------------------
+            name : Koege
+            x : 12.2
+            y : 55.45
+
+
+        Section: POINT_10 --------------------------------------------
+            name : MalmoHamn
+            x : 12.9845
+            y : 55.6257
+
+
+        Section: POINT_11 --------------------------------------------
+            name : Skanor
+            x : 12.8294
+            y : 55.4167
+
+
+        Section: POINT_12 --------------------------------------------
+            name : Vedbaek
+            x : 12.571
+            y : 55.85
+
+
+        Section: POINT_13 --------------------------------------------
+            name : NordreRose
+            x : 12.6867
+            y : 55.6361
+
+
+====================== Point Output Information ======================
+
+  Element  Domain      x (degree)      y (degree)           z (m)
+
+     2884       1     12.71170000     55.53580000    -10.39716329
+      592       1     12.89200000     55.52600000     -2.53012111
+     1495       1     12.90330000     55.75640000     -3.72851386
+      376       1     12.68330000     55.60000000     -3.46243928
+     2674       1     12.84450000     55.58940000     -8.86569872
+     1562       1     12.68450000     56.04120000    -12.48166537
+      301       1     12.46600000     56.09700000     -5.02230577
+     2247       1     12.65000000     55.70000000     -5.68960844
+       79       1     12.20000000     55.45000000     -2.72583680
+      676       1     12.98450000     55.62570000     -4.11999007
+     1166       1     12.82940000     55.41670000     -3.44045476
+      253       1     12.57100000     55.85000000     -2.52131792
+     1743       1     12.68670000     55.63610000     -4.62113338
+======================================================================
+
+
+======================== COMPUTATION STARTED =========================
+
+
+========================= COMPUTATION ENDED ==========================
+
+
+========================= Output Statistics ==========================
+ 
+------------------------- Data File Summary --------------------------
+  Creator: 
+  File   : MIKE21HD_Oresund\model\Oresund.m21fm - Result Files\Area.dfsu
+  Title  : Area
+
+  Start date  Start time  Sets   Interval  Unit
+  2014-01-01    00:00:00175295       1800  second
+
+  Static items:
+  Item name            Item type               Minimum    Maximum Unit
+  Node id              Grid Codes                    1       1916 Integer
+  X-coord              Latitude/longitude    12.193992  13.062208 degree
+  Y-coord              Latitude/longitude    55.277802   56.13362 degree
+  Z-coord              Item geometry 3-dime -47.743146         -2 meter
+  Code                 Grid Codes                    0          3 Integer
+  Element id           Grid Codes                    1       3320 Integer
+  Element type         Grid Codes                   21         21 Integer
+  No of nodes          Grid Codes                    3          3 Integer
+  Connectivity         Grid Codes                    1       1916 Integer
+
+  Dynamic items:
+  Item name            Item type               Minimum    Maximum Unit
+  Surface elevation    Surface Elevation     -1.596186   1.869271 meter
+  U velocity           u-velocity component  -1.252108   1.201368 meter/sec
+  V velocity           v-velocity component  -1.798953   1.619856 meter/sec
+----------------------------------------------------------------------
+ 
+------------------------- Data File Summary --------------------------
+  Creator: 
+  File   : MIKE21HD_Oresund\model\Oresund.m21fm - Result Files\points.dfs0
+  Title  : Points
+
+  Start date  Start time  Sets   Interval  Unit
+  2014-01-01    00:00:00******        300  second
+
+  Dynamic items:
+  Item name            Item type               Minimum    Maximum Unit
+  Drogden: Surface ele Surface Elevation      -1.29724   1.370994 meter
+  Klagshamn: Surface e Surface Elevation     -1.138524   1.302544 meter
+  Barseback: Surface e Surface Elevation      -0.62128   1.303077 meter
+  Dragor: Surface elev Surface Elevation     -0.826227   1.205396 meter
+  Flinten7: Surface el Surface Elevation     -0.688578   1.220615 meter
+  Helsingborg: Surface Surface Elevation     -0.706933     1.3081 meter
+  Hornbaek: Surface el Surface Elevation     -0.942947   1.785582 meter
+  Kobenhavn: Surface e Surface Elevation      -0.64967   1.322233 meter
+  Koege: Surface eleva Surface Elevation     -1.578428   1.641606 meter
+  MalmoHamn: Surface e Surface Elevation     -0.614263   1.289751 meter
+  Skanor: Surface elev Surface Elevation     -1.473434   1.544585 meter
+  Vedbaek: Surface ele Surface Elevation      -0.67081   1.337824 meter
+  NordreRose: Surface  Surface Elevation     -0.609706   1.260659 meter
+  Drogden: U velocity  u-velocity component  -0.744555   0.503704 meter/sec
+  Klagshamn: U velocit u-velocity component  -0.140934   0.148655 meter/sec
+  Barseback: U velocit u-velocity component  -0.111216   0.037044 meter/sec
+  Dragor: U velocity   u-velocity component  -0.047632   0.035769 meter/sec
+  Flinten7: U velocity u-velocity component  -0.798383    0.71078 meter/sec
+  Helsingborg: U veloc u-velocity component  -0.231465   0.274307 meter/sec
+  Hornbaek: U velocity u-velocity component   -0.18981   0.252159 meter/sec
+  Kobenhavn: U velocit u-velocity component  -0.079326   0.048039 meter/sec
+  Koege: U velocity    u-velocity component  -0.019938   0.026533 meter/sec
+  MalmoHamn: U velocit u-velocity component  -0.091893   0.076523 meter/sec
+  Skanor: U velocity   u-velocity component  -0.150913   0.138145 meter/sec
+  Vedbaek: U velocity  u-velocity component  -0.078756   0.105007 meter/sec
+  NordreRose: U veloci u-velocity component  -0.374381   0.599514 meter/sec
+  Drogden: V velocity  v-velocity component  -0.967135   0.668198 meter/sec
+  Klagshamn: V velocit v-velocity component  -0.357953   0.332316 meter/sec
+  Barseback: V velocit v-velocity component  -0.283641   0.129846 meter/sec
+  Dragor: V velocity   v-velocity component   -0.96319   0.777542 meter/sec
+  Flinten7: V velocity v-velocity component  -1.431002   1.291687 meter/sec
+  Helsingborg: V veloc v-velocity component  -1.003044   0.842627 meter/sec
+  Hornbaek: V velocity v-velocity component  -0.164581   0.123697 meter/sec
+  Kobenhavn: V velocit v-velocity component  -0.533868   0.528919 meter/sec
+  Koege: V velocity    v-velocity component  -0.147959   0.138376 meter/sec
+  MalmoHamn: V velocit v-velocity component  -0.171867   0.141538 meter/sec
+  Skanor: V velocity   v-velocity component  -0.372641   0.376896 meter/sec
+  Vedbaek: V velocity  v-velocity component   -0.35994   0.261629 meter/sec
+  NordreRose: V veloci v-velocity component  -1.258451   1.329341 meter/sec
+----------------------------------------------------------------------
+ 
+======================================================================
+
+
+================= Hydrodynamic Simulation Diagnostic =================
+ 
+  Shallow water equations
+  -----------------------
+ 
+  Number of time steps        : 58634173
+  Minimum time step (s)       : 2.5
+  Maximum time step (s)       : 6
+  Average time step (s)       : 5.381319
+======================================================================
+
+
+========================= Simulation Timings =========================
+  ------------------------------------------------------------------
+  Task                                      CPU time    Elapsed time
+  ------------------------------------------------------------------
+  Hydrodynamic Module                      611139.09        26001.69
+    Flow calculations                      596294.97        25385.16
+      Update forcings                       49928.44         2146.94
+      Solve Shallow Water eq.              281376.67        11991.66
+      Other calculation                    264989.86        11246.56
+  ------------------------------------------------------------------
+  Total                                    611139.09        26001.69
+  ------------------------------------------------------------------
+======================================================================
+
+
+========================== Overall Timings ===========================
+  ------------------------------------------------------------------
+  Task                                      CPU time    Elapsed time
+  ------------------------------------------------------------------
+  Pre-processing                                9.61            1.08
+  Calculation                              611266.14        26007.16
+  License check                             11109.89          505.61
+  Post-processing                            5797.06          247.33
+  ------------------------------------------------------------------
+  Total                                    628400.91        26768.98
+  ------------------------------------------------------------------
+======================================================================
+
+
+============================ Memory Usage ============================
+  Peak memory usage (MB)                                       64.38
+======================================================================
+
+
+========================== Parallelization ===========================
+  Number of threads per subdomain : 24
+  Number of subdomains            : 1
+======================================================================
+ 
+  Number of warnings: 0
+ 
+  Normal run completion

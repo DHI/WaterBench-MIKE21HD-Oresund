@@ -56,7 +56,6 @@ cover/
 *.pot
 
 # Django stuff:
-*.log
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
@@ -157,6 +156,7 @@ cython_debug/
 
 # Output files
 output/
+output.zip
 
 # PyCharm
 #  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
