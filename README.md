@@ -85,7 +85,7 @@ Several data sources contribute to this case. They are outlined below.
 
 ### Altimetry data
 
-The altimetry data is extracted from a range of different sources. The data is based on satellite observations, and the data is downloaded using [DHI's services for marine observation data](https://altimetry.dhigroup.com/). The water level measurements processed by centering around zero (subtracting the mean). Data sources:
+The altimetry data is extracted from a range of different sources. The data is based on satellite observations, and the data is downloaded using [DHI's services for marine observation data](https://altimetry.dhigroup.com/). The water level measurements are processed by centering around zero (subtracting the mean). Data sources:
 
 | Satellite name    | Owner|  Link |
 | -------- | ------- | ------- |
