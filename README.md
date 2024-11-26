@@ -1,4 +1,4 @@
-# Hydrodynamical model of Øresund
+# Hydrodynamic model of Øresund
 This README file contains practical information and background information on the data. To view this markdown file in VScode, use ctrl+shift+v. The data can be cited as:
 
 DHI. (2024). Hydrodynamical model of Øresund: MIKE model setup, outputs and validation material (1.0) [Data set]. Zenodo. doi: [10.5281/zenodo.14160710](10.5281/zenodo.14160710)
