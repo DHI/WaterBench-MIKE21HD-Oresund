@@ -1,7 +1,7 @@
 # Hydrodynamic model of Øresund
 This README file contains practical information and background information on the data. To view this markdown file in VScode, use ctrl+shift+v. The data can be cited as:
 
-DHI. (2024). Hydrodynamical model of Øresund: MIKE model setup, outputs and validation material (1.0) [Data set]. Zenodo. doi: [10.5281/zenodo.14160710](10.5281/zenodo.14160710)
+DHI. (2024). Hydrodynamical model of Øresund: MIKE model setup, outputs and validation material (1.0) [Data set]. Zenodo. doi: [10.5281/zenodo.14160710](10.5281/zenodo.14160710)](https://doi.org/10.5281/zenodo.14160710)
 
 See the [license](license.txt) for information on using the data.
 
@@ -55,7 +55,7 @@ The outputs of the model are given as a timeseries for each mesh element on the 
 - the surface elevation,
 - the u and v components of the current velocity.
 
-This data can be found as a separate file in [Zenodo](10.5281/zenodo.14160710). Once a simulation has been run, a log file will be generated. The log-file for the benchmark simulation is found in the folder [/model](/model), and it contains information on the parameters used and the time spent on the simulation. 
+This data can be found as a separate file in [Zenodo](https://doi.org/10.5281/zenodo.14160710). Once a simulation has been run, a log file will be generated. The log-file for the benchmark simulation is found in the folder [/model](/model), and it contains information on the parameters used and the time spent on the simulation. 
 
 Since all data, including output from a simulation, is given, it is not necessary to run the MIKE simulation. However, it is possible, since a setup file is supplied as well as all of the input data. Running the MIKE software requires a license. Read more about obtaining a license [here](https://www.dhigroup.com/technologies/mikepoweredbydhi/pricing) and about academic licensing [here](https://www.dhigroup.com/technologies/mikepoweredbydhi/pricing/academic-licenses). If you already have a license, a step-by-step guide for running simulations can be found [here](https://manuals.mikepoweredbydhi.help/latest/Coast_and_Sea/MIKE_FM_HD_Step_By_Step.pdf).
 
