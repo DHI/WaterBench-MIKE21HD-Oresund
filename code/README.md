@@ -12,6 +12,7 @@ mikecore | 0.2.2
 numpy | 2.1.3
 scipy | 1.14.1
 xarray | 2024.10.0
+ipykernel | 6.29.5
 
 [`requirements.txt`](requirements.txt) contains the list of libraries and their versions used in the notebooks (excluding jupyter).
 
