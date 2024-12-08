@@ -157,6 +157,7 @@ cython_debug/
 # Output files
 output/
 output.zip
+*.zip
 
 # PyCharm
 #  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
