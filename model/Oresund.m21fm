@@ -1,4 +1,4 @@
-// Created     : 2024-11-18 14:32:31
+// Created     : 2024-12-9 13:19:12
 // DLL         : C:\Program Files (x86)\DHI\MIKE Zero\2024\bin\x64\pfs2004.dll
 // Version     : 22.0.3.17314
 
@@ -1819,7 +1819,7 @@
             Touched = 1
             include = 1
             title = 'Points'
-            file_name = 'points.dfs0'
+            file_name = 'Points.dfs0'
             type = 1
             format = 0
             flood_and_dry = 2

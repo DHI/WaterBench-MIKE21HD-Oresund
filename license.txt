@@ -1,2 +1,4 @@
 This work is openly licensed via CC BY 4.0. Read more here: https://creativecommons.org/licenses/by/4.0/
 
+The dataset includes redistribution of third-party datasets in compliance with their respective licenses. 
+Find more information about the licenses of the different datasets in the README.md file.
