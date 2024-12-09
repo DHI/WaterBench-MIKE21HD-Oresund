@@ -26,7 +26,7 @@ The dataset is aimed at supporting educational, research, and exploratory activi
 The repository is organized in the following way
 
 - README.md
-- License
+- license
 - model
     + MIKE model setup file (.m21fm)
     + log file (.log)
@@ -45,7 +45,8 @@ The repository is organized in the following way
 - output_sample
     + a reduced MIKE model result data file (.dfsu and .dfs0)
 
-Separately from the current repository, you can find the output zip file (in Zenodo).
+Separately from the current repository, you can find the output zip file (in Zenodo):
+
 - output
     + MIKE model result data (.dfsu and .dfs0)
 
