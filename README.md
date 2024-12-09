@@ -6,6 +6,10 @@ DHI. (2024). Hydrodynamical model of Øresund: MIKE model setup, outputs and val
 See the [license](license.txt) for information on using the data.
 
 
+#### Disclaimer:
+*The included MIKE21 model setup is designed as a simple demonstration for educational and research purposes. It is not optimized for precision or exhaustive calibration and should not be regarded as a benchmark for best practices in hydrodynamic modeling. The results should not be used for operational or decision-making purposes.*
+
+
 ## Folder structure
 
 The repository is organized in the following way
