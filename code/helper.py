@@ -37,7 +37,7 @@ def get_u_v_point_obs():
 
 def get_altimetry_obs(quality=None):
     """Get altimetry observations as list of TrackObservation objects"""
-    sat_files = glob.glob(obs_fldr + "Altimetry_wl_*.csv")
+    sat_files = sorted(glob.glob(obs_fldr + "Altimetry_wl_*.csv"))
     missions = [f.split("_")[2].split(".")[0] for f in sat_files]
     q = ms.Quantity(name="Surface Elevation", unit="meter")
     altlist = []
