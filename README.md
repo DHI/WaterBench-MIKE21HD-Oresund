@@ -105,9 +105,11 @@ Below, the comparison between the observational data from one such measurement s
 Several data sources contribute to this case. They are outlined below. 
 
 The following changes have been made to the data:
+
 - Sea levels in measurement stations: Data has been filtered to only include "good" or "probably good" data points according to quality flags. The coordinates of some stations have been moved into the simulation domain, since they are sometimes located so close to land (e.g. in a harbor) that the mesh is not covering it. 
 - Current velocities in measurement stations: Data has been filtered to only include "good" or "probably good" data points according to quality flags. Some faulty observations have been removed manually (e.g. zero-values and outliers). The u and v components of the current velocities are calculated from the speed and directions. The data is given at different depths, so depth-averaged values have been calculated. 
 - Altimetry data: Data has been filtered to only include "good" data points according to quality flags. 
+
 
 | Data   | Source|  Citation | License | 
 | -------- | ------- | ------- | ------- |

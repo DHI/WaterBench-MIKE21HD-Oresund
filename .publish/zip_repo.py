@@ -10,7 +10,7 @@ def zip_repo():
     with zipfile.ZipFile(zip_fn, "w") as z:
         for fn in glob.glob("**/*", recursive=True):
             if (
-                not any([fn.startswith(x) for x in [".", "__", "output/"]])
+                not any([fn.startswith(x) for x in [".", "__", "output\\"]])
                 and "__" not in fn
                 and "." in fn
             ):
