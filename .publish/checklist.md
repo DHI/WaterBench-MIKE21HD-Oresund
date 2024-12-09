@@ -10,7 +10,7 @@
 * output_sample (if output to big for repo)
 * output 
 * .preprocessing (hidden, also rawdata if possible)
-* .publish (hidden)
+* .publish (hidden, contain all material/scripts necessary for publishing)
 
 ## csv files
 
@@ -21,11 +21,31 @@
 - File name like: Altimetry_wl_6a.csv; Drogden_wl.csv etc (avoid time in filename)
 
 
+## Code
+
+* Notebooks should be runnable (not raise Exceptions) with output sample data
+* Include requirements.txt 
+
+
 ## MIKE files
 
-
+* Start from hotfile if possible (to avoid spin-off period inside result); alternatively, include x number of days before Jan 1 to have spin-up outside result period
+* Include both full-domain (state) output (dfsu) and point timeseries (dfs0) at observation points
 
 
 ## Licenses
 
-##
+* CC4 ??? 
+* 
+
+
+## Misc checks
+
+* 
+
+
+## Files for Zenodo
+
+* CaseName.zip 
+* CaseName-outputs.zip 
+* README.pdf (rendered version )
