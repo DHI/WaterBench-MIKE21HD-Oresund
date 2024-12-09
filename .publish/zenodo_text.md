@@ -23,6 +23,10 @@ Files:
 * Freja Petersen
 * Jesper Sandvig Mariegaard
 
+## Publication date
+
+2024-12-10
+
 ## Funding
 
 Danish Ministry of Higher Education and Science
