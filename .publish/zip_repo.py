@@ -11,10 +11,12 @@ def zip_repo():
         for fn in glob.glob("**/*", recursive=True):
             if (
                 not any([fn.startswith(x) for x in [".", "__", "output/"]])
-                and not "__" in fn
+                and "__" not in fn
                 and "." in fn
             ):
                 z.write(fn)
+            else:
+                print(f"Excluded: {fn}")
 
     print(f"Zip file created: {zip_fn}")
 
