@@ -46,7 +46,6 @@ The repository is organized in the following way
     + a reduced MIKE model result data file (.dfsu and .dfs0)
 
 Separately from the current repository, you can find the output zip file (in Zenodo).
-
 - output
     + MIKE model result data (.dfsu and .dfs0)
 
@@ -89,12 +88,12 @@ The input and output data are given as dfs files. These files can be processed u
 
 The [ModelSkill Python package](https://dhi.github.io/modelskill/) developed at DHI can be used for validating the model outputs by comparing to observational data. 
 
-The model is validated by comparison to observational data from measurement stations in Øresund and altimetry data from satellites. This is done in the notebook [code/model_validation.ipynb](code/model_validation.ipynb). The leftmost figure below shows the location of the measurement stations, and the rightmost figure shows the coverage of the altimetry data.
+The model is validated by comparison to observational data from measurement stations in Øresund and altimetry data from satellites. This is done in the notebooks code/model_validation_*.ipynb. The leftmost figure below shows the location of the measurement stations, and the rightmost figure shows the coverage of the altimetry data.
 
 ![](figures/stations.png)
 ![](figures/altimetry_coverage.png)
 
-Below, the comparison between the observational data from one such measurement station and MIKE 21 is shown first followed by the comparison to the altimetry data. The production of these and many more plots is found in the notebook [code/model_validation.ipynb](code/model_validation.ipynb). 
+Below, the comparison between the observational data from one such measurement station and MIKE 21 is shown first followed by the comparison to the altimetry data. The production of these and many more plots is found in the notebooks code/model_validation_*.ipynb.
 
 ![](figures/modelskill_comparison_Dragor.png)
 ![](figures/altimetry_comparison.png)
