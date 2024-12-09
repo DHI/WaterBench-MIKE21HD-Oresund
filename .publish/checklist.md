@@ -23,8 +23,10 @@
 
 ## Code
 
-* Notebooks should be runnable (not raise Exceptions) with output sample data
 * Include requirements.txt 
+* Notebooks should be runnable (not raise Exceptions) with output sample data
+* Checked-in notebooks have been run fresh top-to-bottom (e.g. first cell [1] etc)
+* Use consistent structure, naming etc across notebooks
 
 
 ## MIKE files
@@ -36,11 +38,6 @@
 ## Licenses
 
 * CC4 ??? 
-* 
-
-
-## Misc checks
-
 * 
 
 
