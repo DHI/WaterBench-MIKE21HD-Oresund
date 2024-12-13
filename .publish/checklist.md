@@ -37,12 +37,12 @@
 
 ## Licenses
 
-* CC4 ??? 
-* 
+* CC-BY 4.0 
+* Remember to check licenses of third party data
 
 
 ## Files for Zenodo
 
 * CaseName.zip 
 * CaseName-outputs.zip 
-* README.pdf (rendered version )
+* README.pdf (rendered version)
