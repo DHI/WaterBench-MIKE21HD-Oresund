@@ -3,7 +3,7 @@ mikecore==0.2.2
 mikeio==2.1.2
 modelskill==1.1.0
 scipy==1.12.0
-numpy==2.1.3
+numpy==2.2.0
 pandas==2.2.3
 xarray==2024.10.0
 ipykernel==6.29.5
