@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14160710.svg)](https://doi.org/10.5281/zenodo.14160710)
+
 # Hydrodynamic model of Øresund
 This README file contains practical information and background information on the data. The dataset can be cited as:
 
